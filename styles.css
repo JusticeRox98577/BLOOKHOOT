@@ -1,3 +1,52 @@
+/* General Styling */
 body {
-    font-family: Arial, sans-serif;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}
+
+#game-container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Host View */
+#host-view {
+  /* Initially hidden, will be shown when the host joins */
+}
+
+#player-list {
+  list-style: none;
+  padding: 0;
+}
+
+/* Player View */
+#question-area {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+#options-area button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#feedback {
+  margin-top: 20px;
+  font-weight: bold;
 }
