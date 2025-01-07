@@ -1,7 +1,31 @@
+<!DOCTYPE html>
 <html>
-<head><title>Game</title></head>
+<head>
+  <title>GitHub Quiz Game</title>
+  <link rel="stylesheet" href="style.css"> </head>
 <body>
-    <h1>Welcome to the Game</h1>
-    <button onclick="startGame()">Start Game</button>
+
+  <div id="game-container">
+
+    <div id="host-view" style="display: none;"> 
+      <h2>Host View</h2>
+      <button id="start-game">Start Game</button>
+      <div id="question-preview"></div>
+      <ul id="player-list"></ul> 
+    </div>
+
+    <div id="player-view">
+      <h2>Player View</h2>
+      <div id="question-area"></div>
+      <div id="options-area"></div>
+      <button id="submit-answer">Submit</button>
+      <div id="feedback"></div>
+    </div>
+
+  </div>
+
+  <script src="src/game.js"></script>
+  <script src="src/host.js"></script>
+  <script src="src/player.js"></script>
 </body>
 </html>
